@@ -33,9 +33,11 @@ class Sammoner
         //file_get_contents()でURLから文字列取得
         $json = file_get_contents($url);
         $json = mb_convert_encoding($json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
+        //連想配列にデコードする
         $arr = json_decode($json, true);
-        echo $arr['id'] . "\n";
-        echo "name；" . $arr['name'];
+    }
+    public static function setRoutingValues($platform)
+    {
     }
 }
-echo Sammoner::testView();
+var_dump(Sammoner::setRoutingValues($platform = "jp1"));
