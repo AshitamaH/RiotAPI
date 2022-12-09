@@ -9,7 +9,14 @@ namespace App\Library;
 
 class Common
 {
-
+    /**
+     * Undocumented function
+     *
+     * @param [type] $platform
+     * @param [type] $apiType
+     * @param [type] $param
+     * @return void
+     */
     public static function generateUrl($platform, $apiType, $param)
     {
         $domain = "api.riotgames.com";
