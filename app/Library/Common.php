@@ -27,12 +27,6 @@ class Common
         return $url;
     }
 
-    /**
-     * Undocumented function
-     *
-     * @param [type] $url
-     * @return void
-     */
     public static function callApi($url)
     {
         $json = file_get_contents($url);
