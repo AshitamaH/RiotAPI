@@ -29,7 +29,7 @@ class Sammoner
 
     public static function testView()
     {
-        $url = "https://jp1.api.riotgames.com/lol/summoner/v4/summoners/by-name/Mashua?api_key=RGAPI-d9f1f635-a69c-4cab-8dcc-0bd4870fcf7d";
+        $url = "https://jp1.api.riotgames.com/lol/summoner/v4/summoners/by-name/Mashua?api_key=RGAPI-f4bc1567-6bc8-4333-9b82-67aebb076a53";
         //file_get_contents()でURLから文字列取得
         $json = file_get_contents($url);
         $json = mb_convert_encoding($json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');

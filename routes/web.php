@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TopController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +27,4 @@ Route::get('/', function () {
 /**
  * トップページ：検索後
  */
-Route::post('/top', function () {
-    return view('top');
-});
+Route::post('/top', 'TopController@searchSammonerName');
